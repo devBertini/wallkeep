@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0910">
+<title>Wallkeep: Terms of Use</title>
+<meta name="description" content="Wallkeep terms of use.">
+<style>
+:root{--bg:#0B0910;--panel:#1B1622;--card:#3B3345;--text:#F5F0E6;--muted:#A89EB3;--gold:#F2B033;--soul:#70F0E4;--line:rgba(242,176,51,.2)}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:var(--soul);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:linear-gradient(160deg,var(--panel),var(--bg));padding:48px 16px 40px}
+.wrap{max-width:760px;margin:0 auto;padding:0 4px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--gold);letter-spacing:.04em}
+.brand svg{width:28px;height:28px;color:var(--soul)}
+.hero h1{margin:18px 0 6px;font-size:28px;font-weight:800}
+.hero p{margin:0;color:var(--muted)}
+main{max-width:760px;margin:-22px auto 60px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px 20px 8px}
+@media (min-width:600px){main{padding:28px 28px 8px}}
+.toggle{display:flex;gap:8px;margin:0 0 18px}
+.toggle button{border:1px solid var(--line);background:transparent;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.toggle button.active{background:var(--gold);color:#0B0910;border-color:var(--gold);font-weight:700}
+h2{font-size:19px;margin:24px 0 8px;color:var(--gold)}
+.muted{color:var(--muted);font-size:14px}
+.badge{display:inline-block;background:rgba(112,240,228,.12);color:var(--soul);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:8px 0 20px}
+@media (min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border-radius:14px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:16px;color:var(--gold)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+ul{padding-left:20px}
+footer{max-width:760px;margin:0 auto 50px;padding:0 16px;color:var(--muted);font-size:13px;text-align:center}
+hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 22V8h2V5h2v3h2V5h2v3h2V5h2v3h2v14h-5v-5a2 2 0 0 0-4 0v5Z" fill="currentColor"/></svg> Wallkeep</div>
+    <h1>Terms of Use</h1>
+    <p>The short version.</p>
+  </div>
+</header>
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Portugu&ecirc;s</button>
+  </div>
+  <section class="lang" id="lang-en">
+<p>Wallkeep is licensed to you under Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard End User License Agreement</a>. These notes add what is specific to the game.</p>
+<h2>Purchases</h2>
+<p>The Royal Charter is a one-time purchase handled by Apple. It stays with your Apple Account and can be restored in the game's Settings.</p>
+<h2>Your save</h2>
+<p>Your progress lives on your device. We cannot recover a save that was erased or lost with a device.</p>
+<h2>Contact</h2>
+<p><a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a></p>
+<hr><p class="muted">Last updated: September 28, 2026</p>
+  </section>
+  <section class="lang" id="lang-pt" hidden>
+<p>O Wallkeep &eacute; licenciado a voc&ecirc; pelo <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contrato de Licen&ccedil;a de Usu&aacute;rio Final padr&atilde;o da Apple</a>. Estas notas acrescentam o que &eacute; espec&iacute;fico do jogo.</p>
+<h2>Compras</h2>
+<p>A Carta Real &eacute; uma compra &uacute;nica feita pela Apple. Ela fica na sua Conta Apple e pode ser restaurada nos Ajustes do jogo.</p>
+<h2>Seu save</h2>
+<p>O seu progresso fica no seu aparelho. N&atilde;o conseguimos recuperar um save apagado ou perdido junto com um aparelho.</p>
+<h2>Contato</h2>
+<p><a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a></p>
+<hr><p class="muted">&Uacute;ltima atualiza&ccedil;&atilde;o: 28 de setembro de 2026</p>
+  </section>
+</main>
+<footer>&copy; 2026 Wallkeep &middot; <a href="../">Home</a> &middot; <a href="../privacy/">Privacy</a> &middot; <a href="../support/">Support</a> &middot; <a href="../terms/">Terms</a></footer>
+<script>
+function setLang(l){
+  document.getElementById('lang-en').hidden=(l!=='en');
+  document.getElementById('lang-pt').hidden=(l!=='pt');
+  document.getElementById('btn-en').classList.toggle('active',l==='en');
+  document.getElementById('btn-pt').classList.toggle('active',l==='pt');
+  document.documentElement.lang=l==='pt'?'pt-BR':'en';
+}
+if((navigator.language||'').toLowerCase().startsWith('pt'))setLang('pt');
+</script>
+</body>
+</html>

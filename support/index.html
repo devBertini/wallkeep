@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0910">
+<title>Wallkeep: Support</title>
+<meta name="description" content="Wallkeep support and questions.">
+<style>
+:root{--bg:#0B0910;--panel:#1B1622;--card:#3B3345;--text:#F5F0E6;--muted:#A89EB3;--gold:#F2B033;--soul:#70F0E4;--line:rgba(242,176,51,.2)}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:var(--soul);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:linear-gradient(160deg,var(--panel),var(--bg));padding:48px 16px 40px}
+.wrap{max-width:760px;margin:0 auto;padding:0 4px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--gold);letter-spacing:.04em}
+.brand svg{width:28px;height:28px;color:var(--soul)}
+.hero h1{margin:18px 0 6px;font-size:28px;font-weight:800}
+.hero p{margin:0;color:var(--muted)}
+main{max-width:760px;margin:-22px auto 60px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px 20px 8px}
+@media (min-width:600px){main{padding:28px 28px 8px}}
+.toggle{display:flex;gap:8px;margin:0 0 18px}
+.toggle button{border:1px solid var(--line);background:transparent;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.toggle button.active{background:var(--gold);color:#0B0910;border-color:var(--gold);font-weight:700}
+h2{font-size:19px;margin:24px 0 8px;color:var(--gold)}
+.muted{color:var(--muted);font-size:14px}
+.badge{display:inline-block;background:rgba(112,240,228,.12);color:var(--soul);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:8px 0 20px}
+@media (min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border-radius:14px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:16px;color:var(--gold)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+ul{padding-left:20px}
+footer{max-width:760px;margin:0 auto 50px;padding:0 16px;color:var(--muted);font-size:13px;text-align:center}
+hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 22V8h2V5h2v3h2V5h2v3h2V5h2v3h2v14h-5v-5a2 2 0 0 0-4 0v5Z" fill="currentColor"/></svg> Wallkeep</div>
+    <h1>Support</h1>
+    <p>We read every message.</p>
+  </div>
+</header>
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Portugu&ecirc;s</button>
+  </div>
+  <section class="lang" id="lang-en">
+<h2>Contact</h2>
+<p>Write to <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a> with your iPhone model and what happened. We answer in English or Portuguese.</p>
+<h2>Questions</h2>
+<p><strong>Where is my progress saved?</strong> On your iPhone only. It comes back with your device's iCloud or computer backup if you restore one.</p>
+<p><strong>I bought the Royal Charter on another device.</strong> Open Settings in the game and tap Restore purchase.</p>
+<p><strong>How do ads work?</strong> Only when you choose: a bonus with the video icon plays a short ad and pays the bonus when it ends; closing it early pays nothing. With the Royal Charter every bonus comes at once, with no ad. Your consent choices are in Settings, Privacy choices, when they apply where you live.</p>
+<p><strong>The wall fell.</strong> The campaign steps back two waves and keeps your coins, upgrades, towers and heroes, so buy what you need and push again.</p>
+<p><strong>What does Reset keep?</strong> Gems, the workshop, your best wave and the lands you have seen. Coins, upgrades, towers and heroes start over, and the workshop makes the next campaign stronger from wave 1.</p>
+<p><strong>How do reminders work?</strong> Turn on Reminders in Settings, or tap the reminder line when you come back. The game asks for permission once, and you can turn them off at any time.</p>
+  </section>
+  <section class="lang" id="lang-pt" hidden>
+<h2>Contato</h2>
+<p>Escreva para <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a> com o modelo do seu iPhone e o que aconteceu. Respondemos em portugu&ecirc;s ou ingl&ecirc;s.</p>
+<h2>Perguntas</h2>
+<p><strong>Onde fica salvo o meu progresso?</strong> S&oacute; no seu iPhone. Ele volta com o backup do iCloud ou do computador, se voc&ecirc; restaurar um.</p>
+<p><strong>Comprei a Carta Real em outro aparelho.</strong> Abra os Ajustes do jogo e toque em Restaurar compra.</p>
+<p><strong>Como funcionam os an&uacute;ncios?</strong> S&oacute; quando voc&ecirc; escolhe: um b&ocirc;nus com o &iacute;cone de v&iacute;deo mostra um an&uacute;ncio curto e paga o b&ocirc;nus quando ele termina; fechar antes n&atilde;o paga. Com a Carta Real todo b&ocirc;nus vem na hora, sem an&uacute;ncio. As suas escolhas de consentimento ficam em Ajustes, Escolhas de privacidade, quando valem onde voc&ecirc; mora.</p>
+<p><strong>A muralha caiu.</strong> A campanha volta duas ondas e mant&eacute;m as suas moedas, melhorias, torres e her&oacute;is: compre o que precisa e avance de novo.</p>
+<p><strong>O que o Reset mant&eacute;m?</strong> Gemas, a oficina, a sua melhor onda e as terras que voc&ecirc; j&aacute; viu. Moedas, melhorias, torres e her&oacute;is recome&ccedil;am, e a oficina deixa a pr&oacute;xima campanha mais forte desde a onda 1.</p>
+<p><strong>Como funcionam os lembretes?</strong> Ligue Lembretes em Ajustes, ou toque na linha do lembrete quando voltar ao jogo. O jogo pede permiss&atilde;o uma vez, e voc&ecirc; pode desligar quando quiser.</p>
+  </section>
+</main>
+<footer>&copy; 2026 Wallkeep &middot; <a href="../">Home</a> &middot; <a href="../privacy/">Privacy</a> &middot; <a href="../support/">Support</a> &middot; <a href="../terms/">Terms</a></footer>
+<script>
+function setLang(l){
+  document.getElementById('lang-en').hidden=(l!=='en');
+  document.getElementById('lang-pt').hidden=(l!=='pt');
+  document.getElementById('btn-en').classList.toggle('active',l==='en');
+  document.getElementById('btn-pt').classList.toggle('active',l==='pt');
+  document.documentElement.lang=l==='pt'?'pt-BR':'en';
+}
+if((navigator.language||'').toLowerCase().startsWith('pt'))setLang('pt');
+</script>
+</body>
+</html>
