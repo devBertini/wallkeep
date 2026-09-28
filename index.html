@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0B0910">
+<title>Wallkeep</title>
+<meta name="description" content="Wallkeep: a pixel-art castle defense for iPhone.">
+<style>
+:root{--bg:#0B0910;--panel:#1B1622;--card:#3B3345;--text:#F5F0E6;--muted:#A89EB3;--gold:#F2B033;--soul:#70F0E4;--line:rgba(242,176,51,.2)}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+a{color:var(--soul);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:linear-gradient(160deg,var(--panel),var(--bg));padding:48px 16px 40px}
+.wrap{max-width:760px;margin:0 auto;padding:0 4px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;color:var(--gold);letter-spacing:.04em}
+.brand svg{width:28px;height:28px;color:var(--soul)}
+.hero h1{margin:18px 0 6px;font-size:28px;font-weight:800}
+.hero p{margin:0;color:var(--muted)}
+main{max-width:760px;margin:-22px auto 60px;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px 20px 8px}
+@media (min-width:600px){main{padding:28px 28px 8px}}
+.toggle{display:flex;gap:8px;margin:0 0 18px}
+.toggle button{border:1px solid var(--line);background:transparent;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+.toggle button.active{background:var(--gold);color:#0B0910;border-color:var(--gold);font-weight:700}
+h2{font-size:19px;margin:24px 0 8px;color:var(--gold)}
+.muted{color:var(--muted);font-size:14px}
+.badge{display:inline-block;background:rgba(112,240,228,.12);color:var(--soul);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:600;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:8px 0 20px}
+@media (min-width:600px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border-radius:14px;padding:14px 16px}
+.card h3{margin:0 0 4px;font-size:16px;color:var(--gold)}
+.card p{margin:0;color:var(--muted);font-size:15px}
+ul{padding-left:20px}
+footer{max-width:760px;margin:0 auto 50px;padding:0 16px;color:var(--muted);font-size:13px;text-align:center}
+hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+.lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 22V8h2V5h2v3h2V5h2v3h2V5h2v3h2v14h-5v-5a2 2 0 0 0-4 0v5Z" fill="currentColor"/></svg> Wallkeep</div>
+    <h1>Tap. Hold the wall. Push further.</h1>
+    <p>A pixel-art castle defense for iPhone.</p>
+  </div>
+</header>
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Portugu&ecirc;s</button>
+  </div>
+  <section class="lang" id="lang-en">
+<span class="badge">Coming soon to the App Store for iPhone</span>
+<p>Wallkeep is a pixel-art castle defense you play with your thumb. Monsters march down three lanes toward your wall: tap to fire the keep's crossbow, hire heroes and archers who fight on their own, build towers in the wall, and when you get stuck, reset for gems that make every new campaign stronger.</p>
+<div class="grid"><div class="card"><h3>Tap to defend</h3><p>Every tap fires a bolt with a flash, a knockback and a coin. Quick kills build a combo, and abilities turn the tide when a boss enrages.</p></div><div class="card"><h3>Heroes and archers</h3><p>Six heroes stand on the walkway, each with a rule of their own, beside up to six archers who shoot whatever you mark.</p></div><div class="card"><h3>Towers in the wall</h3><p>Ballista, Cannon, Brazier and Frost Tower fire on their own from the wall's niches.</p></div><div class="card"><h3>Bosses and events</h3><p>Ten bosses, blood moons, hordes, gold waves and treasure crows that pay whoever catches them.</p></div><div class="card"><h3>Reset for gems</h3><p>Start the campaign over with gems for the workshop, whose upgrades make every campaign stronger and open new lands.</p></div><div class="card"><h3>Seven lands, offline</h3><p>From the meadow to the abyss, with no account and your save on your iPhone. Ads only when you choose one.</p></div></div>
+  </section>
+  <section class="lang" id="lang-pt" hidden>
+<span class="badge">Em breve na App Store para iPhone</span>
+<p>Wallkeep &eacute; uma defesa de castelo em pixel art que voc&ecirc; joga com o polegar. Monstros descem por tr&ecirc;s trilhas at&eacute; a sua muralha: toque para disparar a besta da torre, contrate her&oacute;is e arqueiros que lutam sozinhos, erga torres na muralha e, quando empacar, resete por gemas que deixam cada nova campanha mais forte.</p>
+<div class="grid"><div class="card"><h3>Toque para defender</h3><p>Cada toque dispara um virote com brilho, impacto e moeda. Abates r&aacute;pidos formam combos, e as habilidades viram o jogo quando um chefe se enfurece.</p></div><div class="card"><h3>Her&oacute;is e arqueiros</h3><p>Seis her&oacute;is ficam no alto da muralha, cada um com sua regra, ao lado de at&eacute; seis arqueiros que atiram em quem voc&ecirc; marcar.</p></div><div class="card"><h3>Torres na muralha</h3><p>Balista, Canh&atilde;o, Braseiro e Torre de Gelo atiram sozinhos dos nichos da muralha.</p></div><div class="card"><h3>Chefes e eventos</h3><p>Dez chefes, luas de sangue, hordas, ondas de ouro e corvos do tesouro que pagam quem os pegar.</p></div><div class="card"><h3>Resete por gemas</h3><p>Recomece a campanha com gemas para a oficina, cujas melhorias deixam toda campanha mais forte e abrem terras novas.</p></div><div class="card"><h3>Sete terras, sem internet</h3><p>Do campo ao abismo, sem conta e com o seu save no iPhone. An&uacute;ncio s&oacute; quando voc&ecirc; escolhe.</p></div></div>
+  </section>
+</main>
+<footer>&copy; 2026 Wallkeep &middot; <a href="privacy/">Privacy</a> &middot; <a href="support/">Support</a> &middot; <a href="terms/">Terms</a></footer>
+<script>
+function setLang(l){
+  document.getElementById('lang-en').hidden=(l!=='en');
+  document.getElementById('lang-pt').hidden=(l!=='pt');
+  document.getElementById('btn-en').classList.toggle('active',l==='en');
+  document.getElementById('btn-pt').classList.toggle('active',l==='pt');
+  document.documentElement.lang=l==='pt'?'pt-BR':'en';
+}
+if((navigator.language||'').toLowerCase().startsWith('pt'))setLang('pt');
+</script>
+</body>
+</html>
